@@ -6,7 +6,7 @@
 
 html, body {
     height: 100%;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
 }
 
 body {
@@ -17,48 +17,68 @@ body {
 }
 
 footer {
+    color: rgba(255,255,255,0.8);
     background: #206989;
-    color: white;
-    height: 8rem;
+    height: 6rem;
+    padding: 1em 0em;
     position: relative; 
+    text-align: center;
+}
+
+footer p:first-child {
+    /*margin-top: 2em;*/
+    /*background: red;*/
 }
 
 header {
     background: #36afe4;
     color: white;
-    /*height: 4em;*/
     overflow: hidden;
     padding: 0.5em 1em;
     position: relative;
     box-shadow: 0px 5px 10px #c7c7c7;
+    min-height: 5em;
 }
 
 header h1 {
-    border: 1px solid white;
-    /*font-size: 1.4em;*/
+    /*border: 1px solid white;*/
+    font-size: 1.8rem;
     font-weight: normal;
-    margin: 0em 0em 0em 1em;
-    vertical-align: middle;
-    float: left;
+    margin: 0.5rem calc(75px + 2rem);
 
     /** Posicionamiento vertical */
     -ms-flex-line-pack: center;
-    align-content: center;
+        align-content: center;
     bottom: 0;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
-    flex-direction: column;
+        flex-direction: column;
     -ms-flex-pack: center;
-    justify-content: center;
+        justify-content: center;
+    position: absolute;
     left: 0;
     right: 0;
     top: 0;
 }
 
 header #logo {
-    margin: 0px;
-    float: left;
+    margin: 0.5em 1em;
+
+    /** Posicionamiento vertical */
+    -ms-flex-line-pack: center;
+        align-content: center;
+    bottom: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
 }
 
 header #logo img {
@@ -102,5 +122,3 @@ input {
 #wrapper {
   min-height: calc(100vh - 8rem);
 }
-
-
