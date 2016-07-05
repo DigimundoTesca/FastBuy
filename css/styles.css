@@ -1,20 +1,26 @@
-/** Font styles */
-@font-face {
-    font-family: 'puls';
-    src:    url('../fonts/puls.eot?j1pth5');
-    src:    url('../fonts/puls.eot?j1pth5#iefix') format('embedded-opentype'),
-        url('../fonts/puls.ttf?j1pth5') format('truetype'),
-        url('../fonts/puls.woff?j1pth5') format('woff'),
-        url('../fonts/puls.svg?j1pth5#puls') format('svg');
-    font-weight: normal;
-    font-style: normal;
-} 
-
-
 /* Styles */
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    box-sizing: border-box;
+}
+
 body {
+    background: #eee;
+    color: #5b5b5b;
     font-family: "Open Sans";
     font-size: 18px;
+}
+
+footer {
+    background: #206989;
+    color: white;
+    height: 8rem;
+    position: relative; 
 }
 
 header {
@@ -24,22 +30,26 @@ header {
     overflow: hidden;
     padding: 0.5em 1em;
     position: relative;
+    box-shadow: 0px 5px 10px #c7c7c7;
 }
 
-
 header h1 {
-    /*border: 1px solid white;*/
-    font-size: 1.4em;
+    border: 1px solid white;
+    /*font-size: 1.4em;*/
     font-weight: normal;
-    margin: 0em 1em 0em 4.5em;
-    position: absolute;
+    margin: 0em 0em 0em 1em;
     vertical-align: middle;
+    float: left;
 
     /** Posicionamiento vertical */
+    -ms-flex-line-pack: center;
     align-content: center;
     bottom: 0;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-pack: center;
     justify-content: center;
     left: 0;
     right: 0;
@@ -48,6 +58,7 @@ header h1 {
 
 header #logo {
     margin: 0px;
+    float: left;
 }
 
 header #logo img {
@@ -55,3 +66,41 @@ header #logo img {
     border-radius: 50%;
     width: 75px;
 }
+
+
+input {
+    border: none;
+    border-bottom: 1px solid #757575;
+    border-radius: 0;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    box-sizing: border-box;
+}
+
+#content {
+    padding: 1em;
+}
+
+#content #login {
+    /*border: 1px solid red;*/
+    background: #fcfcfc;
+    max-width: 768px;
+    margin: 0px auto;
+    overflow: hidden;
+    text-align: center;
+    padding: 1em 2em;
+}
+
+#content #login .field {
+    display: block;
+    color: #636363;
+    width: 100%;
+    padding: 10px 10px 10px 5px;
+}
+
+#wrapper {
+  min-height: calc(100vh - 8rem);
+}
+
+
