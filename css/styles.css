@@ -1,0 +1,57 @@
+/** Font styles */
+@font-face {
+    font-family: 'puls';
+    src:    url('../fonts/puls.eot?j1pth5');
+    src:    url('../fonts/puls.eot?j1pth5#iefix') format('embedded-opentype'),
+        url('../fonts/puls.ttf?j1pth5') format('truetype'),
+        url('../fonts/puls.woff?j1pth5') format('woff'),
+        url('../fonts/puls.svg?j1pth5#puls') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+
+/* Styles */
+body {
+    font-family: "Open Sans";
+    font-size: 18px;
+}
+
+header {
+    background: #36afe4;
+    color: white;
+    /*height: 4em;*/
+    overflow: hidden;
+    padding: 0.5em 1em;
+    position: relative;
+}
+
+
+header h1 {
+    /*border: 1px solid white;*/
+    font-size: 1.4em;
+    font-weight: normal;
+    margin: 0em 1em 0em 4.5em;
+    position: absolute;
+    vertical-align: middle;
+
+    /** Posicionamiento vertical */
+    align-content: center;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+header #logo {
+    margin: 0px;
+}
+
+header #logo img {
+    background: #206989;
+    border-radius: 50%;
+    width: 75px;
+}
