@@ -2,7 +2,7 @@
 
 * {
     margin: 0;
-}
+} 
 
 html, body {
     height: 100%;
@@ -19,15 +19,19 @@ body {
 footer {
     color: rgba(255,255,255,0.8);
     background: #206989;
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.2);
     height: 6rem;
     padding: 1em 0em;
-    position: relative; 
+    position: relative;   
     text-align: center;
 }
 
 footer p:first-child {
-    /*margin-top: 2em;*/
-    /*background: red;*/
+    margin-top: 1em;
+}
+
+footer p:last-child {
+    font-size: 0.8em;
 }
 
 header {
@@ -36,13 +40,14 @@ header {
     overflow: hidden;
     padding: 0.5em 1em;
     position: relative;
-    box-shadow: 0px 5px 10px #c7c7c7;
-    min-height: 5em;
+    box-shadow: 0px 0px 7px 0px #777;
+    /*box-shadow: 0px 2px 2px rgba(0,0,0,0.2);*/
+    min-height: 5rem;
 }
 
 header h1 {
     /*border: 1px solid white;*/
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: normal;
     margin: 0.5rem calc(75px + 2rem);
 
@@ -86,7 +91,7 @@ header #logo img {
     border-radius: 50%;
     width: 75px;
 }
-
+ 
 
 input {
     border: none;
@@ -95,21 +100,37 @@ input {
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 #content {
-    padding: 1em;
+    padding: 2em 2.5em;
 }
 
 #content #login {
-    /*border: 1px solid red;*/
     background: #fcfcfc;
-    max-width: 768px;
-    margin: 0px auto;
-    overflow: hidden;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+    height: auto;
+    max-width: 768px; 
+    margin: 2em auto;
+    padding: 2em 2em;
     text-align: center;
-    padding: 1em 2em;
+}
+
+#content #login .login-text {
+    font-size: 1.6em;
+    margin: 1.5em 0em;
+}
+
+#content #login #avatar_login
+{
+    margin: 0em 0em 1em 0em;
+}
+
+#content #login #avatar_login img
+{
+    border-radius: 50%;
+    height: 125px;
 }
 
 #content #login .field {
@@ -120,5 +141,6 @@ input {
 }
 
 #wrapper {
-  min-height: calc(100vh - 8rem);
+    min-height: calc(100vh - 8rem);
+    height: auto;
 }
