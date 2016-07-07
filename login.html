@@ -1,65 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
- 
 <head> 
-    <meta charset="utf-8" />
-    <meta name="description" content="Fast Buy description"/>
-    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
-
+    <title>FastBuy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=devide-width, initial-scale=1, maximum-scale=1"/>
+    <link rel="shortcut icon" type="image/x-icon" href="sources/images/favicon.ico"> 
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <!--  Import Google Fonts: 'Roboto' -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
-    <!-- Normalize -->
-    <link rel="stylesheet" href="css/normalize.css" />
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/styles.css" />
-
-
-
-
-    <title>Fast Buy</title> 
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
-
-<body>
-    <div id="wrapper">
-        <header>
-            <figure id="logo">
-                <a href=""><img src="sources/images/logo_fastbuy.png"></a>
-            </figure>
-            <h1>
-                <span>FastBuy</span>
-            </h1>
-        </header>  
-        <section  id="content" >
-            <form id="login">
-                <p class="login-text">Inicia sesión amigo</p>
-                <figure id="avatar_login">
+<body> 
+<header>
+    <nav id="nav_header">
+        <div class="nav-wrapper row light-blue lighten-1">
+            <div class="col s12 l12"> 
+                <a href="#" class="brand-logo">FastBuy</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="container">
+        <div class="row">
+            <div class=" card-panel col s12 m10 offset-m1">
+                <div class="center">
+                    <h4>Inicia sesión</h4>
+                    <p class="light">ola k ase?</p>
+                    <figure id="avatar_login">
                     <img src="sources/images/img_boy.png"/>
                 </figure>
-                <input class="field" type="email" placeholder="Email"required>
-                <input class="field" type="password" placeholder="Contraseña"required>
-                <button class="login-btn">Iniciar sesión</button>
-                <p class="forgot-text">
-                    <a href="#"><span class="blue-text text-darken-2">Olvidé mi contraseña</span></a>
-                </p>
-            </form>
-        </section>
+                </div>            
+                <div class="row">
+                    <form class="col s10 offset-s1">
+                        <div class="row">
+                            <div class="input-field col s12 ">
+                                <i class="material-icons prefix">email</i>
+                                <input id="email" type="email" class="validate">
+                                <label for="email" data-error="Email inválido" required>Email</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">lock</i>
+                                <input id="password" type="password" class="validate" required>
+                                <label for="email">Password</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <button class="btn waves-effect waves-light amber accent-4 right large" type="submit" name="action">
+                                    Submit
+                                <i class="material-icons right">send</i>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-    <footer>
-        <p>
-            <strong>FastBuy ©</strong>
-        </p>
-        <p>Made with ♥ by Digimundo</p>
-    </footer>
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
+</main>
+<footer class="page-footer light-blue darken-3">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h5 class="white-text">
+                    FastBuy
+                </h5>
+                <p class="white-text caption">
+                    Made with ♥ by Digimundo
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2016 Digimundo, All rights reserved.
+        </div>
+      </div>
+</footer>
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
