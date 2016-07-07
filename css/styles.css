@@ -1,32 +1,68 @@
+/** Icon Fonts */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/material-design-icons/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(../fonts/material-design-icons/MaterialIcons-Regular.woff2) format('woff2'),
+       url(../fonts/material-design-icons/MaterialIcons-Regular.woff) format('woff'),
+       url(../fonts/material-design-icons/MaterialIcons-Regular.ttf) format('truetype');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+html { 
+    color: #206989 !important;
+ }
+/* Styles */
 body {
-    background: #eee;
+    background-color: #eee !important;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
 }
-
 main {
     flex: 1 0 auto;
 }
-
-#avatar_login
-{
+#avatar_login {
     margin: 0em 0em 1em 0em;
 }
-
-#avatar_login img
-{
+#avatar_login img {
     border-radius: 50%;
     height: 125px;
 }
-
+#card_login { 
+    margin-top: 2rem;
+}
 /* label focus color */
 .input-field input[type=text]:focus + label,
 .input-field input[type=email]:focus + label,
 .input-field input[type=password]:focus + label {
     color: #ffab00 ;
 }
-
 /* label underline focus color */
 .input-field input[type=email]:focus,
 .input-field input[type=password]:focus,
@@ -34,10 +70,26 @@ main {
     border-bottom: 1px solid #ffab00;
     box-shadow: 0 1px 0 0 #ffab00;
 }
-
 /* icon prefix focus color */
 .input-field .prefix.active {
  color: #ffab00;
+}
+/* Colors */
+.primary {
+    background-color: #36afe4 !important;
+}
+.primary-dark {
+    background-color: #206989 !important;
+}
+/** Declarado en el body también */
+.primary-text { 
+    color: #206989;
+}
+.primary-text-dark {
+    color: #5b5b5b;
+}
+.accent {
+
 }
 
 /** Repair bug labels */
