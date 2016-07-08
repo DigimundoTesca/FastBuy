@@ -11,7 +11,7 @@
 </head>
 <body> 
 <header>
-    <nav id="nav_header">
+    <nav>
         <div class="nav-wrapper row primary">
             <div class="col s12 l12"> 
                 <a href="#" class="brand-logo">FastBuy</a>
@@ -22,7 +22,7 @@
 <main>
     <div class="container">
         <div class="row">
-            <div id="card_login" class="card-panel col s12 m10 offset-m1">
+            <div id="card_login" class="  card-panel col s12 m10 offset-m1">
                 <div class="center">
                     <h4 class="primary-text-dark">Inicia sesión</h4>
                     <figure id="avatar_login">
@@ -30,12 +30,12 @@
                 </figure>
                 </div> 
                 <div class="row">
-                    <form class="col s10 offset-s1">
+                    <form class="col s10 offset-s1" action="html/l_events.html">
                         <div class="row">
                             <div class="input-field col s12 ">
                                 <i class="material-icons prefix">email</i>
-                                <input id="email" type="email" class="validate">
-                                <label for="email" data-error="Email inválido" required>Email</label>
+                                <input id="email" type="email" class="validate" required>
+                                <label for="email" data-error="Email inválido">Email</label>
                             </div>
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">lock</i>
@@ -43,9 +43,12 @@
                                 <label for="email">Password</label>
                             </div>
                             <div class="input-field col s12">
-                                <button class="btn waves-effect waves-light amber accent-4 right large" type="submit" name="action">
+                                <button class="btn waves-effect waves-light accent right large" type="submit" name="action">
                                     Submit
                                 <i class="material-icons right">send</i>
+                            </div>
+                            <div class="input-field col s12">
+                                <a class="right" href="">Olvidé mi contraseña</a>
                             </div>
                         </div>
                     </form>
@@ -69,7 +72,7 @@
     </div>
     <div class="footer-copyright">
         <div class="container">
-            © 2016 Digimundo, All rights reserved.
+            © 2016 FastBuy, All rights reserved.
         </div>
       </div>
 </footer>
