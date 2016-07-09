@@ -124,6 +124,12 @@ nav ul li {
 .accent {
   background-color: #ffab00 !important;
 }
+.bold {
+    font-weight: 600;
+}
+.normal {
+    font-weight: 400;
+}
 .primary {
     background-color: #36afe4 !important;
 }
@@ -141,7 +147,7 @@ nav ul li {
     background-color: rgba(54,175,228,0.8) !important;
 }
 .side-nav li a:hover{
-    background-color: rgba(54,175,228,0.2);
+    background-color: rgba(54,175,228,0.2) !important;
 }
 /** Repair bug labels */
 label[data-error]:after {
