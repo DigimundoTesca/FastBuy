@@ -101,8 +101,8 @@ nav ul li {
     margin: auto;
     max-height: 300px;
     max-width: 100%;
+    /*min-height: 300px;*/
     width: auto !important;
-    background: red;
 }
 #avatar_login {
     margin: 0em 0em 1em 0em;
