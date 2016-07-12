@@ -88,6 +88,21 @@ nav ul li {
     float: left;
     padding: 0;
 }
+.card {
+    overflow: hidden;
+}
+.product_content {
+    /*background: red !important;*/
+}
+.product_image {
+    margin: 0 auto;
+    /*display: block;*/
+
+    /*text-align: center !important;*/
+    max-height: 300px;
+    max-width: 100%;
+    width: auto !important;
+}
 #avatar_login {
     margin: 0em 0em 1em 0em;
 }
@@ -116,6 +131,8 @@ nav ul li {
     border-bottom: 1px solid #ffab00;
     box-shadow: 0 1px 0 0 #ffab00;
 }
+
+
 /* icon prefix focus color */
 .input-field .prefix.active {
  color: #ffab00;
@@ -149,6 +166,7 @@ nav ul li {
 .side-nav li a:hover{
     background-color: rgba(54,175,228,0.2) !important;
 }
+
 /** Repair bug labels */
 label[data-error]:after {
     white-space: nowrap;
