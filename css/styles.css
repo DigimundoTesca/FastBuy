@@ -80,6 +80,7 @@ main {
     padding-top: 2rem;
     flex: 1 0 auto;
 }
+
 nav ul li {
     transition: background-color .3s;
     transition-property: background-color;
@@ -93,17 +94,15 @@ nav ul li {
     overflow: hidden;
 }
 .product_content {
+    display: flex;
     min-height: 300px;
-    /*background: red !important;*/
 }
 .product_image {
-    margin: 0 auto;
-    /*display: block;*/
-
-    /*text-align: center !important;*/
+    margin: auto;
     max-height: 300px;
     max-width: 100%;
     width: auto !important;
+    background: red;
 }
 #avatar_login {
     margin: 0em 0em 1em 0em;
