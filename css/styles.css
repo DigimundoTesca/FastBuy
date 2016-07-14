@@ -1,4 +1,4 @@
-/** Icon Fonts */
+/** ------------- Icon Fonts ------------- */
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;
@@ -23,15 +23,9 @@
     white-space: nowrap;
     direction: ltr;
 
-    /* Support for all WebKit browsers. */
     -webkit-font-smoothing: antialiased;
-    /* Support for Safari and Chrome. */
     text-rendering: optimizeLegibility;
-
-    /* Support for Firefox. */
     -moz-osx-font-smoothing: grayscale;
-
-    /* Support for IE. */
     font-feature-settings: 'liga';
 }
     /* Icomon fonts */
@@ -66,7 +60,10 @@
 .icon-map:before {
     content: "\e94b";
 }
-/* Styles */
+
+
+
+/** --------------- Styles ---------------*/
 html { 
     color: #206989 !important;
  }
@@ -93,6 +90,10 @@ nav ul li {
 .card {
     overflow: hidden;
 }
+.container {
+    max-width: 1440px; 
+    width: 90%;
+}
 .product_content {
     display: flex;
     min-height: 300px;
@@ -111,9 +112,6 @@ nav ul li {
     border-radius: 50%;
     height: 125px;
 }
-#header_nav {
-    width: 90%;
-}
 
 #ul_nav 
 /* label focus color */
@@ -129,13 +127,13 @@ nav ul li {
     border-bottom: 1px solid #ffab00;
     box-shadow: 0 1px 0 0 #ffab00;
 }
-
-
 /* icon prefix focus color */
 .input-field .prefix.active {
  color: #ffab00;
 }
-/* Colors */
+
+
+/** ---- Colors ---- */
 .accent {
   background-color: #ffab00 !important;
 }
@@ -168,3 +166,6 @@ nav ul li {
 label[data-error]:after {
     white-space: nowrap;
 }
+
+/** --------------- Media queries ---------------*/
+s
