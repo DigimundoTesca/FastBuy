@@ -108,7 +108,16 @@ nav ul li {
 #avatar_login {
     margin: 0em 0em 1em 0em;
 }
-#avatar_login img {
+#avatar_login_img {
+    border-radius: 50%;
+    height: 125px;
+}
+
+#avatar_profile {
+    margin: 0;
+}
+
+#avatar_profile_img {
     border-radius: 50%;
     height: 125px;
 }
@@ -168,4 +177,8 @@ label[data-error]:after {
 }
 
 /** --------------- Media queries ---------------*/
-s
+/*@media only screen and (min-width: 600px) and (max-width: 900px) {
+    .card-title {
+        font-size: 1.5em !important;
+    }
+}*/
