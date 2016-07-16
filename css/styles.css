@@ -89,6 +89,7 @@ nav ul li {
 }
 .card {
     overflow: hidden;
+    /*min-height: 800px;*/
 }
 .container {
     max-width: 1440px; 
@@ -96,13 +97,12 @@ nav ul li {
 }
 .product_content {
     display: flex;
-    min-height: 200px;
+    min-height: 300px;
     /*background-color: red !important;*/
-    
 }
 .product_image {
     margin: auto;
-    max-height: 200px;
+    max-height: 300px;
     max-width: 100%;
     width: auto !important;
 }
@@ -124,24 +124,6 @@ nav ul li {
 }
 
 #ul_nav 
-/* label focus color */
-.input-field input[type=text]:focus + label,
-.input-field input[type=email]:focus + label,
-.input-field input[type=password]:focus + label {
-    color: #ffab00 ;
-}
-/* label underline focus color */
-.input-field input[type=email]:focus,
-.input-field input[type=password]:focus,
-.input-field input[type=text]:focus {
-    border-bottom: 1px solid #ffab00;
-    box-shadow: 0 1px 0 0 #ffab00;
-}
-/* icon prefix focus color */
-.input-field .prefix.active {
- color: #ffab00;
-}
-
 
 /** ---- Colors ---- */
 .accent {
@@ -170,6 +152,30 @@ nav ul li {
 }
 .side-nav li a:hover{
     background-color: rgba(54,175,228,0.2) !important;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field input[type=password]:focus + label {
+    color: #ffab00 ;
+}
+/* label underline focus color */
+.input-field input[type=email]:focus,
+.input-field input[type=password]:focus,
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #ffab00;
+    box-shadow: 0 1px 0 0 #ffab00;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: #ffab00;
+}
+.switch label input[type=checkbox]:checked+.lever:after {
+    background-color: #ffab00 !important;
+}
+.switch label 
+input[type=checkbox]:checked+.lever {
+    background-color: rgba(255,171,0,0.5);
 }
 
 /** Repair bug labels */
