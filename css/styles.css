@@ -89,7 +89,13 @@ nav ul li {
 }
 .card {
     overflow: hidden;
-    /*min-height: 800px;*/
+}
+.card .card-content .card-title {
+    line-height: 1em;
+}
+.card .card-content .card-title::after {
+    content: "aaa";
+    margin-bottom: 3em;
 }
 .container {
     max-width: 1440px; 
@@ -97,15 +103,18 @@ nav ul li {
 }
 .product_content {
     display: flex;
-    min-height: 300px;
+    min-height: 250px;
     /*background-color: red !important;*/
 }
 .product_image {
     margin: auto;
-    max-height: 300px;
+    max-height: 250px;
     max-width: 100%;
     width: auto !important;
 }
+/*.large {
+    min-height: 500px !important;
+}*/
 #avatar_login {
     margin: 0em 0em 1em 0em;
 }
@@ -122,8 +131,6 @@ nav ul li {
     border-radius: 50%;
     height: 125px;
 }
-
-#ul_nav 
 
 /** ---- Colors ---- */
 .accent {
@@ -154,10 +161,11 @@ nav ul li {
     background-color: rgba(54,175,228,0.2) !important;
 }
 /* label focus color */
+/*#ul_nav, */
 .input-field input[type=text]:focus + label,
 .input-field input[type=email]:focus + label,
 .input-field input[type=password]:focus + label {
-    color: #ffab00 ;
+    color: #ffab00 ;s
 }
 /* label underline focus color */
 .input-field input[type=email]:focus,
