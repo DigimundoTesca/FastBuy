@@ -96,13 +96,14 @@ nav ul li {
 }
 .product_content {
     display: flex;
-    min-height: 300px;
+    min-height: 200px;
+    /*background-color: red !important;*/
+    
 }
 .product_image {
     margin: auto;
-    max-height: 300px;
+    max-height: 200px;
     max-width: 100%;
-    /*min-height: 300px;*/
     width: auto !important;
 }
 #avatar_login {
