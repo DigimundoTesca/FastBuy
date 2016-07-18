@@ -94,7 +94,6 @@ nav ul li {
     line-height: 1em;
 }
 .card .card-content .card-title::after {
-    content: "aaa";
     margin-bottom: 3em;
 }
 .container {
