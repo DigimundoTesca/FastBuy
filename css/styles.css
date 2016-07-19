@@ -61,21 +61,22 @@
     content: "\e94b";
 }
 
-
-
 /** --------------- Styles ---------------*/
-html { 
-    color: #206989 !important;
- }
 body {
     background-color: #eee !important;
+    display: -ms-flexbox;
     display: flex;
     min-height: 100vh;
-    flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
+}
+html { 
+    color: #206989 !important;
 }
 main {
     padding-top: 2rem;
-    flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+        flex: 1 0 auto;
 }
 
 nav ul li {
@@ -90,30 +91,49 @@ nav ul li {
 .card {
     overflow: hidden;
 }
+.card a {
+    transition: color .3s ease;
+}
+.card a:hover {
+    color: rgba(3,155,229,0.7);
+}
 .card .card-content .card-title {
     line-height: 1em;
 }
+.card .card-content .card-text-content {
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    vertical-align: middle;
+    white-space: nowrap;
+    max-width: 87%;
+}
 .card .card-content .card-title::after {
     margin-bottom: 3em;
+}
+.card-title {
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    vertical-align: middle;
+    white-space: nowrap;
+    max-width: 100%;
 }
 .container {
     max-width: 1440px; 
     width: 90%;
 }
 .product_content {
+    display: -ms-flexbox;
     display: flex;
-    min-height: 250px;
-    /*background-color: red !important;*/
+    min-height: 300px;
 }
 .product_image {
     margin: auto;
-    max-height: 250px;
+    max-height: 300px;
     max-width: 100%;
     width: auto !important;
 }
-/*.large {
-    min-height: 500px !important;
-}*/
 #avatar_login {
     margin: 0em 0em 1em 0em;
 }
