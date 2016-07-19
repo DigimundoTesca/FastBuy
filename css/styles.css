@@ -146,9 +146,6 @@ nav ul li {
 .bold {
     font-weight: 600;
 }
-.dropdown-content li>a {
-    color: #206989;     /*primary-text*/
-}
 .side-nav a {
     color: #206989;   /*primary-text*/
 }
@@ -162,10 +159,10 @@ nav ul li {
     background-color: #206989 !important;
 }
 .primary-text { 
-    color: #206989;
+    color: #206989 !important;
 }
 .primary-text-dark {
-    color: #5b5b5b;
+    color: #5b5b5b !important;
 }
 .side-nav .active { 
     background-color: rgba(54,175,228,0.8) !important;
