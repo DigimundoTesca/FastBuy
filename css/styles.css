@@ -146,6 +146,12 @@ nav ul li {
 .bold {
     font-weight: 600;
 }
+.dropdown-content li>a {
+    color: #206989;     /*primary-text*/
+}
+.side-nav a {
+    color: #206989;   /*primary-text*/
+}
 .normal {
     font-weight: 400;
 }
