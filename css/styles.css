@@ -212,7 +212,7 @@ nav ul li {
     background-color: #206989 !important;
 }
 .primary-text { 
-    color: #206989;
+    color: #206989 !important;
 }
 .primary-text-accent {
     color: #ffab00;
