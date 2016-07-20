@@ -223,14 +223,14 @@ nav ul li {
 .primary-text-light {
     color: rgba(32,105,137,0.5)
 }
-.status-color-delivered {
-    color: #00c853;
+.status-delivered {
+    color: #4caf50;
 }
-.status-color-canceled {
+.status-canceled {
     color: #d50000;
 }
-.status-color-pending {
-    color: #0091ea;
+.status-pending {
+    color: #fb8c00 ;
 }
 .side-nav .active { 
     background-color: rgba(54,175,228,0.8) !important;
