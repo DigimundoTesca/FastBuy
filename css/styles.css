@@ -94,14 +94,6 @@ nav ul li {
 .btn-flat:hover {
     color: rgba(255,171,0,0.6) !important;
 }
-.btn-details-container {
-    /*align-items: center;*/
-    /*display: flex;*/
-    /*height: 150px;*/
-    /*justify-content: center;*/
-    /*margin: auto;*/
-    /*width: auto;*/
-}
 .card {
     overflow: hidden;
 }
@@ -194,7 +186,7 @@ nav ul li {
 
 /** ---- Colors ---- */
 .accent {
-  background-color: #ffab00;
+  background-color: #ffab00 !important;
 }
 .bold {
     font-weight: 600;
