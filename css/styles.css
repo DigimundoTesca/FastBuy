@@ -142,11 +142,14 @@ nav ul li {
 }
 .sales_product_content {
     align-items: center;
+    /*background-color: red;*/
+    border-radius: 50% !important;
     display: flex;
-    height: 100px;
+    height: 75px;
     justify-content: center;
-    margin: auto;
-    width: auto;
+    margin: 1.5rem auto 0;
+    overflow: hidden;
+    width: 75px;
 }
 .sales_product_image {
     height: 100%;
