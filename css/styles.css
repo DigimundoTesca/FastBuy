@@ -91,6 +91,9 @@ nav ul li {
     float: left;
     padding: 0;
 }
+.avatar_product_image {
+    height: 100%;
+}
 .btn-flat {
     transition: color .3s ease !important;
 }
