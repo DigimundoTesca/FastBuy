@@ -70,6 +70,9 @@ body {
     -ms-flex-direction: column;
         flex-direction: column;
 }
+h1,h2,h3,h4,h5 {
+    font-weight: 300;
+}
 html { 
     color: #206989 !important;
 }
@@ -129,6 +132,9 @@ nav ul li {
     max-width: 1440px; 
     width: 90%;
 }
+.collection a:hover{
+    background-color: rgba(54,175,228,0.2) !important;
+}
 .product_content {
     display: -ms-flexbox;
     display: flex;
@@ -161,6 +167,15 @@ nav ul li {
     vertical-align: middle;
     white-space: nowrap;
     max-width: 100%;
+}
+.title {
+    font-weight: 600;
+}
+.title a {
+    transition: color .3s ease;
+}
+.title a:hover {
+    color: rgba(3,155,229,0.7);
 }
 #avatar_login {
     margin: 0em 0em 1em 0em;
