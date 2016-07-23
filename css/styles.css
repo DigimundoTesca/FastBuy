@@ -135,6 +135,7 @@ nav ul li {
     max-width: 1440px; 
     width: 90%;
 }
+.collapsible-header:hover,
 .collapsible-header {
     padding: 0.2rem;
     /*height: 75px;*/
@@ -148,30 +149,34 @@ nav ul li {
     min-height: 300px;
 }
 .product_image {
-    margin: 1em;
+    margin: auto;
     max-height: 300px;
     max-width: 100%;
     width: auto !important;
 }
-.sales_product_content {
-    display: inline-block;
-/*    align-items: center;
-    background-color: red;
-    border-radius: 50% !important;
+.sales_collapsible_body {
     display: flex;
-    float: left;
-    height: 50px;
-    justify-content: center;
-    margin: 1em auto 0;
-    overflow: hidden;
-    width: 50px;
-    */
-    height: 50px;
+    padding: 0.5em 1em;
+}
+.sales_collapsible_body p {
     margin: 0;
     padding: 0;
-    background-color: red !important;
 }
-.sales_product_image {
+.sales_collapsible_header {
+    display: flex;
+    padding: 0.5em 1em;
+}
+.sales_collapsible_header figure {
+    display: flex;
+    border-radius: 50%;
+    height: 45px;
+    margin: 0 1em 0 0;
+    overflow: hidden;
+    width: 45px;
+    justify-content: center;
+    align-items: center;
+}
+.sales_collapsible_header figure img {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -183,7 +188,22 @@ nav ul li {
     padding: 0;
     background-color: gray;
 }
-.text_info{
+.sales_collapsible_header .sales_header_item {
+    width: auto;
+    display: flex;
+}
+.sales_collapsible_header .sales_header_item .u_price{
+    font-weight: 500;
+}
+.sales_collapsible_header .sales_header_item .t_price{
+    font-weight: 500;
+    font-size: 1.5em;
+}
+.sales_collapsible_header .sales_header_item p {
+    margin: 0 2.5em 0 0;
+    padding: 0;
+}
+].text_info{
     display: inline-block;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -192,7 +212,7 @@ nav ul li {
     max-width: 100%;
 }
 .title {
-    font-weight: 600;
+    font-weight: 500;
 }
 .title a {
     transition: color .3s ease;
