@@ -135,6 +135,10 @@ nav ul li {
     max-width: 1440px; 
     width: 90%;
 }
+.collapsible-header {
+    padding: 0.2rem;
+    /*height: 75px;*/
+}
 .collection a:hover{
     background-color: rgba(54,175,228,0.2) !important;
 }
@@ -144,24 +148,40 @@ nav ul li {
     min-height: 300px;
 }
 .product_image {
-    margin: auto;
+    margin: 1em;
     max-height: 300px;
     max-width: 100%;
     width: auto !important;
 }
 .sales_product_content {
-    align-items: center;
-    /*background-color: red;*/
+    display: inline-block;
+/*    align-items: center;
+    background-color: red;
     border-radius: 50% !important;
     display: flex;
-    height: 75px;
+    float: left;
+    height: 50px;
     justify-content: center;
-    margin: 1.5rem auto 0;
+    margin: 1em auto 0;
     overflow: hidden;
-    width: 75px;
+    width: 50px;
+    */
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    background-color: red !important;
 }
 .sales_product_image {
     height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.products_list li .collapsible-header p{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
 }
 .text_info{
     display: inline-block;
