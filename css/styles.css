@@ -95,6 +95,7 @@ nav ul li {
     height: 100%;
 }
 .btn-flat {
+    color: #ffab40;
     transition: color .3s ease !important;
 }
 .btn-flat:hover {
@@ -131,13 +132,13 @@ nav ul li {
     white-space: nowrap;
     max-width: 100%;
 }
-.container {
-    max-width: 1440px; 
-    width: 90%;
-}
 .collapsible-header:hover,
 .collection a:hover{
     background-color: rgba(54,175,228,0.2) !important;
+}
+.container {
+    max-width: 1440px; 
+    width: 90%;
 }
 .hidden {
     display: none !important;
