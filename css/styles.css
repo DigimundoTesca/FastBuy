@@ -139,6 +139,9 @@ nav ul li {
 .collection a:hover{
     background-color: rgba(54,175,228,0.2) !important;
 }
+.hidden {
+    display: none !important;
+}
 .product_content {
     display: -ms-flexbox;
     display: flex;
@@ -198,14 +201,6 @@ nav ul li {
 .sales_collapsible_header .sales_header_item p {
     margin: 0 2.5em 0 0;
     padding: 0;
-}
-].text_info{
-    display: inline-block;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    vertical-align: middle;
-    white-space: nowrap;
-    max-width: 100%;
 }
 .title {
     font-weight: 500;
@@ -319,8 +314,21 @@ label[data-error]:after {
 }
 
 /** --------------- Media queries ---------------*/
-/*@media only screen and (min-width: 600px) and (max-width: 900px) {
-    .card-title {
-        font-size: 1.5em !important;
+/** 
+*   
+*/
+@media only screen and (max-width: 768px){
+    .hidde-s {
+        display: none !important;
     }
-}*/
+}
+@media only screen and (max-width: 992px){
+    .hidde-m {
+        display: none !important;
+    }
+}
+@media only screen and (min-width: 993px){
+    .hidde-l {
+        display: none !important;
+    }
+}
