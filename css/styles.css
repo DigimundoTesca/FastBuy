@@ -1,14 +1,14 @@
 /** ------------- Icon Fonts ------------- */
 @font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/material-design-icons/MaterialIcons-Regular.eot); /* For IE6-8 */
-  src: local('Material Icons'),
-       local('MaterialIcons-Regular'),
-       url(../fonts/material-design-icons/MaterialIcons-Regular.woff2) format('woff2'),
-       url(../fonts/material-design-icons/MaterialIcons-Regular.woff) format('woff'),
-       url(../fonts/material-design-icons/MaterialIcons-Regular.ttf) format('truetype');
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/material-design-icons/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+        local('MaterialIcons-Regular'),
+        url(../fonts/material-design-icons/MaterialIcons-Regular.woff2) format('woff2'),
+        url(../fonts/material-design-icons/MaterialIcons-Regular.woff) format('woff'),
+        url(../fonts/material-design-icons/MaterialIcons-Regular.ttf) format('truetype');
 }
 .material-icons {
     font-family: 'Material Icons';
@@ -28,7 +28,7 @@
     -moz-osx-font-smoothing: grayscale;
     font-feature-settings: 'liga';
 }
-    /* Icomon fonts */
+/* Icomon fonts */
 @font-face {
     font-family: 'icon';
     src:    url('../fonts/icomoon/icomoon.eot?4owwjo');
@@ -68,7 +68,7 @@ body {
     display: flex;
     min-height: 100vh;
     -ms-flex-direction: column;
-        flex-direction: column;
+    flex-direction: column;
 }
 h1,h2,h3,h4,h5 {
     font-weight: 300;
@@ -79,7 +79,7 @@ html {
 main {
     padding-top: 2rem;
     -ms-flex: 1 0 auto;
-        flex: 1 0 auto;
+    flex: 1 0 auto;
 }
 
 nav ul li {
@@ -96,10 +96,10 @@ nav ul li {
 }
 .btn-flat {
     color: #ffab40;
-    transition: color .3s ease !important;
+    transition: color.3s ease !important;
 }
 .btn-flat:hover {
-    color: rgba(255,171,0,0.6) !important;
+    color: rgba(3,155,229,0.5) !important;
 }
 .card {
     overflow: hidden;
@@ -132,6 +132,9 @@ nav ul li {
     white-space: nowrap;
     max-width: 100%;
 }
+.collapsible-header .hidde-l{
+    line-height: 2rem;
+}
 .collapsible-header:hover,
 .collection a:hover{
     background-color: rgba(54,175,228,0.2) !important;
@@ -140,12 +143,25 @@ nav ul li {
     max-width: 1440px; 
     width: 90%;
 }
+.filter-list .collapsible-body:hover,
+.filter-list .collapsible-header:hover,
+.filter-list .collapsible-footer:hover {
+    background-color: none;
+}
+.filter-list .collapsible-body-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 .hidden {
     display: none !important;
 }
+li.filter-list:hover {
+    background-color: rgba(0,0,0,0) !important;
+}
 .product_content {
     display: -ms-flexbox;
-    display: flex;
+        display: flex;
     min-height: 300px;
 }
 .product_image {
@@ -239,7 +255,7 @@ nav ul li {
 
 /** ---- Colors ---- */
 .accent {
-  background-color: #ffab00 !important;
+    background-color: #ffab00 !important;
 }
 .bold {
     font-weight: 600;
@@ -266,7 +282,10 @@ nav ul li {
     color: #5b5b5b;
 }
 .primary-text-light {
-    color: rgba(32,105,137,0.5)
+    color: rgba(32,105,137,0.5);
+}
+.primary-text-link {
+    color: rgba(3,155,229,1);
 }
 .status-delivered {
     color: #4caf50;
@@ -288,7 +307,7 @@ nav ul li {
 .input-field input[type=text]:focus + label,
 .input-field input[type=email]:focus + label,
 .input-field input[type=password]:focus + label {
-    color: #ffab00 ;s
+    color: #ffab00 ;
 }
 /* label underline focus color */
 .input-field input[type=email]:focus,
