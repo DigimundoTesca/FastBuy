@@ -63,7 +63,7 @@
 
 /** --------------- Styles ---------------*/
 body {
-    background-color: #eee !important;
+    background-color: rgba(238,238,238,1);
     display: -ms-flexbox;
     display: flex;
     min-height: 100vh;
@@ -74,7 +74,7 @@ h1,h2,h3,h4,h5 {
     font-weight: 300;
 }
 html { 
-    color: #206989 !important;
+    color: rgb(32,105,137);
 }
 main {
     padding-top: 2rem;
@@ -95,7 +95,7 @@ nav ul li {
     height: 100%;
 }
 .btn-flat {
-    color: #ffab40;
+    color: rgba(255,171,64,1);
     transition: color.3s ease !important;
 }
 .btn-flat:hover {
@@ -132,6 +132,10 @@ nav ul li {
     white-space: nowrap;
     max-width: 100%;
 }
+.collapsible-body {
+    background-color: rgb(255,255,255);
+}
+
 .collapsible-header .hidde-l{
     line-height: 2rem;
 }
@@ -144,9 +148,11 @@ nav ul li {
     width: 90%;
 }
 .filter-list .collapsible-body:hover,
-.filter-list .collapsible-header:hover,
 .filter-list .collapsible-footer:hover {
-    background-color: none;
+    background-color: rgba(255,255,255,1) !important;
+}
+.filter-list .collapsible-header {
+    font-weight: 600;
 }
 .filter-list .collapsible-body-button {
     display: flex;
@@ -155,9 +161,6 @@ nav ul li {
 }
 .hidden {
     display: none !important;
-}
-li.filter-list:hover {
-    background-color: rgba(0,0,0,0) !important;
 }
 .product_content {
     display: -ms-flexbox;
@@ -255,31 +258,31 @@ li.filter-list:hover {
 
 /** ---- Colors ---- */
 .accent {
-    background-color: #ffab00 !important;
+    background-color: rgba(255,171,0,1) !important;
 }
 .bold {
     font-weight: 600;
 }
 .side-nav a {
-    color: #206989;   /*primary-text*/
+    color: rgba(32,105,137,1);   /*primary-text*/
 }
 .normal {
     font-weight: 400;
 }
 .primary {
-    background-color: #36afe4;
+    background-color: rgba(54,175,228,1);
 }
 .primary-dark {
-    background-color: #206989 !important;
+    background-color: rgba(32,105,137,1) !important;
 }
 .primary-text { 
-    color: #206989 !important;
+    color: rgba(32,105,137,1) !important;
 }
 .primary-text-accent {
-    color: #ffab00;
+    color: rgba(255,171,0,1);
 }
 .primary-text-dark {
-    color: #5b5b5b;
+    color: rgba(91,91,91,1);
 }
 .primary-text-light {
     color: rgba(32,105,137,0.5);
@@ -288,13 +291,13 @@ li.filter-list:hover {
     color: rgba(3,155,229,1);
 }
 .status-delivered {
-    color: #4caf50;
+    color: rgba(76,175,80,1);
 }
 .status-canceled {
-    color: #d50000;
+    color: rgba(213,0,0,1);
 }
 .status-pending {
-    color: #fb8c00 ;
+    color: rgba(251,140,0,1) ;
 }
 .side-nav .active { 
     background-color: rgba(54,175,228,0.8) !important;
@@ -307,21 +310,21 @@ li.filter-list:hover {
 .input-field input[type=text]:focus + label,
 .input-field input[type=email]:focus + label,
 .input-field input[type=password]:focus + label {
-    color: #ffab00 ;
+    color: rgba(255,171,0,1) ;
 }
 /* label underline focus color */
 .input-field input[type=email]:focus,
 .input-field input[type=password]:focus,
 .input-field input[type=text]:focus {
-    border-bottom: 1px solid #ffab00;
-    box-shadow: 0 1px 0 0 #ffab00;
+    border-bottom: 1px solid rgba(255,171,0,1);
+    box-shadow: 0 1px 0 0 rgba(255,171,0,1);
 }
 /* icon prefix focus color */
 .input-field .prefix.active {
-    color: #ffab00;
+    color: rgba(255,171,0,1);
 }
 .switch label input[type=checkbox]:checked+.lever:after {
-    background-color: #ffab00 !important;
+    background-color: rgba(255,171,0,1) !important;
 }
 .switch label 
 input[type=checkbox]:checked+.lever {
