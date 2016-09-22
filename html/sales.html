@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <title>FastBuy - Sales</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link rel="shortcut icon" type="image/x-icon" href="../sources/images/favicon.ico"> 
+    <!--Import materialize.css-->
+    <link rel="stylesheet" type="text/css" href="../css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head> 
+<body> 
+    <header>
+        <!-- Dropdown Structure -->
+        <ul id="dropdown_settings" class="dropdown-content">
+            <li><a href="summary.html" class="waves-effect primary-text">Resumen</a></li>
+            <li class="divider"></li>
+            <li><a href="../login.html" class="waves-effect primary-text">Cerrar sesión</a></li>
+        </ul>
+        <div class="navbar-fixed">
+            <nav class="primary">
+                <div id="header_nav" class="container">
+                    <div class="nav-wrapper">
+                        <a href="l_events.html" class="brand-logo">Ventas</a>
+                        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a> 
+                        <ul id="ul_nav" class="right hide-on-med-and-down">
+                            <li><a href="l_events.html" class="waves-effect" title="Inicio"><i class="material-icons">home</i></a></li>
+                            <li><a href="products.html" class="waves-effect" title="Catálogo"><i class="material-icons">store</i></a></li>
+                            <li><a href="offers.html" class="waves-effect" title="Ofertas"><i class="material-icons">star</i></a></li>
+                            <li class="active"><a href="sales.html" class="waves-effect" title="Ventas"><i class="icon-moneybag"></i></a></li>
+                            <li><a id="user_name_nav" class="dropdown-button waves-effect" data-activates="dropdown_settings" href="#!" title="Nombre de usuario"><i class="material-icons right">person</i><span id="nick_name">Nombre del usuario xd xd xd xd :v :v :v :v lol Lore.</span></a>
+                            </li> 
+                        </ul>
+                        <ul class="side-nav" id="mobile-demo">
+                            <li><a href="l_events.html" class="waves-effect">Inicio</a></li>
+                            <li><a href="products.html" class="waves-effect">Productos</a></li>
+                            <li><a href="offers.html" class="waves-effect">Ofertas</a></li> 
+                            <li class="active"><a href="sales.html" class="waves-effect">Ventas</a></li>
+                            <li class="no-padding">
+                                <ul id="dropdown_settings_side" class="collapsible" data-collapsible="accordion">
+                                    <li class="bold">
+                                        <a href="#!" class="collapsible-header waves-effect"><i class="material-icons right">arrow_drop_down</i>Mi cuenta</a>
+                                        <div class="collapsible-body sales_collapsible_body">
+                                            <ul class="normal">
+                                                <li><a href="summary.html" class="waves-effect">Resumen</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="../login.html" class="waves-effect">Cerrar sesión</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m3 l2">
+                    <ul class="collapsible" data-collapsible="expandible">
+                        <li class="filter-list">
+                            <div class="collapsible-header active">
+                                <i class="material-icons">attach_money</i>
+                                Precios
+                            </div>
+                            <div class="collapsible-body col s12">
+                                <div class="input-field col s6 m12">
+                                    <input id="min-price" type="number" class="validate">
+                                    <label for="min-price">Min</label>
+                                </div>
+                                <div class="input-field col s6 m12">
+                                    <input id="max-price" type="number" class="validate">
+                                    <label for="max-price">Max</label>
+                                </div>
+                                <div class="collapsible-body-button col s12">
+                                    <button class="btn-flat primary-text-link right waves-effect" type="submit" name="submit-filter">
+                                        Filtrar
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="filter-list">
+                            <div class="collapsible-header active">
+                                <i class="material-icons">attach_money</i>
+                                Filtro 2
+                            </div>
+                            <div class="collapsible-body">
+                                Se metió un pejelagarto!
+                            </div>
+                        </li>
+                        <li class="filter-list">
+                            <div class="collapsible-header active">
+                                <i class="material-icons">attach_money</i>
+                                Filtro 2
+                            </div>
+                            <div class="collapsible-body">
+                                Se metió un pejelagarto!
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col s12 m9 l10">
+                    <h4> Ventas: <span class="right green-text"><strong>$999.00</strong></span></h4>
+                    <ul class="collapsible" data-collapsible="accordion">
+                        <li>
+                            <div class="collapsible-header sales_collapsible_header waves-effect">
+                                <figure>
+                                    <img class="sales_image" src="../sources/images/products/gansito-marinela.jpg" alt="sales_image">
+                                </figure>
+                                <div class="sales_header_item col s12 hidde-m">
+                                    <p class="col s4"><span class="title">Nombre del producto</span></p>
+                                    <p class="col s2"><span class="right"> P. unitario:</span></p>
+                                    <p class="col s2"><span class="right u_price green-text">$99.99</span></p>
+                                    <p class="col s2"><span class="right"> Venta Total:</span></p>
+                                    <p class="col s2"><span class="right t_price primary-text-accent">$ 99.99</span></p>
+                                </div>
+                                <div class="hidde-l">
+                                    <div class="col s12">
+                                        <span class="bold">Nombre del producto</span>
+                                    </div>
+                                    <div class="col s6">
+                                        Precio Unitario: <span class="bold">$ 999.99</span>
+                                    </div>
+                                    <div class="col s6">
+                                        Total: <span class="bold">$ 999.99</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapsible-body sales_collapsible_body">
+                                <table class="highlight responsive-table">
+                                    <thead>
+                                        <tr>
+                                            <th data-field="type">Tipo</th>
+                                            <th data-field="name">Nombre</th>
+                                            <th data-field="units">Unidades</th>
+                                            <th data-field="units">Pago</th>
+                                            <th data-field="units">Status</th>
+                                            <th data-field="units">Hora</th>
+                                            <th data-field="units">Ubicación</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Gold</td>
+                                            <td>Eric21</td>
+                                            <td>5</td>
+                                            <td>Efectivo</td>
+                                            <td>Entregado</td>
+                                            <td>10:00</td>
+                                            <td>Miguel Hidalgo, Ciudad de México</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gold</td>
+                                            <td>Eric21</td>
+                                            <td>5</td>
+                                            <td>Efectivo</td>
+                                            <td>Entregado</td>
+                                            <td>10:00</td>
+                                            <td>Miguel Hidalgo, Ciudad de México</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gold</td>
+                                            <td>Eric21</td>
+                                            <td>5</td>
+                                            <td>Efectivo</td>
+                                            <td>Entregado</td>
+                                            <td>10:00</td>
+                                            <td>Miguel Hidalgo, Ciudad de México</td>
+                                        </tr><tr>
+                                        <td>Gold</td>
+                                        <td>Eric21</td>
+                                        <td>5</td>
+                                        <td>Efectivo</td>
+                                        <td>Entregado</td>
+                                        <td>10:00</td>
+                                        <td>Miguel Hidalgo, Ciudad de México</td>
+                                        </tr><tr>
+                                        <td>Gold</td>
+                                        <td>Eric21</td>
+                                        <td>5</td>
+                                        <td>Efectivo</td>
+                                        <td>Entregado</td>
+                                        <td>10:00</td>
+                                        <td>Miguel Hidalgo, Ciudad de México</td>
+                                        </tr>
+                                    </tbody>
+                                </table>                       
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header sales_collapsible_header waves-effect">
+                                <figure>
+                                    <img class="sales_image" src="../sources/images/products/gansito-marinela.jpg" alt="sales_image">
+                                </figure>
+                                <div class="sales_header_item col s12 hidde-m">
+                                    <p class="col s4"><span class="title">Nombre del producto</span></p>
+                                    <p class="col s2"><span class="right"> P. unitario:</span></p>
+                                    <p class="col s2"><span class="right u_price green-text">$99.99</span></p>
+                                    <p class="col s2"><span class="right"> Venta Total:</span></p>
+                                    <p class="col s2"><span class="right t_price primary-text-accent">$ 99.99</span></p>
+                                </div>
+                                <div class="hidde-l">
+                                    <div class="col s12">
+                                        <span class="bold">Nombre del producto</span>
+                                    </div>
+                                    <div class="col s6">
+                                        Precio Unitario: <span class="bold">$ 999.99</span>
+                                    </div>
+                                    <div class="col s6">
+                                        Total: <span class="bold">$ 999.99</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapsible-body sales_collapsible_body">
+                                <table class="highlight responsive-table">
+                                    <thead>
+                                        <tr>
+                                            <th data-field="type">Tipo</th>
+                                            <th data-field="name">Nombre</th>
+                                            <th data-field="units">Unidades</th>
+                                            <th data-field="units">Pago</th>
+                                            <th data-field="units">Status</th>
+                                            <th data-field="units">Hora</th>
+                                            <th data-field="units">Ubicación</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Gold</td>
+                                            <td>Eric21</td>
+                                            <td>5</td>
+                                            <td>Efectivo</td>
+                                            <td>Entregado</td>
+                                            <td>10:00</td>
+                                            <td>Miguel Hidalgo, Ciudad de México</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gold</td>
+                                            <td>Eric21</td>
+                                            <td>5</td>
+                                            <td>Efectivo</td>
+                                            <td>Entregado</td>
+                                            <td>10:00</td>
+                                            <td>Miguel Hidalgo, Ciudad de México</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gold</td>
+                                            <td>Eric21</td>
+                                            <td>5</td>
+                                            <td>Efectivo</td>
+                                            <td>Entregado</td>
+                                            <td>10:00</td>
+                                            <td>Miguel Hidalgo, Ciudad de México</td>
+                                        </tr><tr>
+                                        <td>Gold</td>
+                                        <td>Eric21</td>
+                                        <td>5</td>
+                                        <td>Efectivo</td>
+                                        <td>Entregado</td>
+                                        <td>10:00</td>
+                                        <td>Miguel Hidalgo, Ciudad de México</td>
+                                        </tr><tr>
+                                        <td>Gold</td>
+                                        <td>Eric21</td>
+                                        <td>5</td>
+                                        <td>Efectivo</td>
+                                        <td>Entregado</td>
+                                        <td>10:00</td>
+                                        <td>Miguel Hidalgo, Ciudad de México</td>
+                                        </tr>
+                                    </tbody>
+                                </table>                       
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header sales_collapsible_header waves-effect">
+                                <figure>
+                                    <img class="sales_image" src="../sources/images/products/gansito-marinela.jpg" alt="sales_image">
+                                </figure>
+                                <div class="sales_header_item col s12 hidde-m">
+                                    <p class="col s4"><span class="title">Nombre del producto</span></p>
+                                    <p class="col s2"><span class="right"> P. unitario:</span></p>
+                                    <p class="col s2"><span class="right u_price green-text">$99.99</span></p>
+                                    <p class="col s2"><span class="right"> Venta Total:</span></p>
+                                    <p class="col s2"><span class="right t_price primary-text-accent">$ 99.99</span></p>
+                                </div>
+                                <div class="hidde-l">
+                                    <div class="col s12">
+                                        <span class="bold">Nombre del producto</span>
+                                    </div>
+                                    <div class="col s6">
+                                        Precio Unitario: <span class="bold">$ 999.99</span>
+                                    </div>
+                                    <div class="col s6">
+                                        Total: <span class="bold">$ 999.99</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapsible-body sales_collapsible_body">
+                                <table class="highlight responsive-table">
+                                    <thead>
+                                        <tr>
+                                            <th data-field="type">Tipo</th>
+                                            <th data-field="name">Nombre</th>
+                                            <th data-field="units">Unidades</th>
+                                            <th data-field="units">Pago</th>
+                                            <th data-field="units">Status</th>
+                                            <th data-field="units">Hora</th>
+                                            <th data-field="units">Ubicación</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Gold</td>
+                                            <td>Eric21</td>
+                                            <td>5</td>
+                                            <td>Efectivo</td>
+                                            <td>Entregado</td>
+                                            <td>10:00</td>
+                                            <td>Miguel Hidalgo, Ciudad de México</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gold</td>
+                                            <td>Eric21</td>
+                                            <td>5</td>
+                                            <td>Efectivo</td>
+                                            <td>Entregado</td>
+                                            <td>10:00</td>
+                                            <td>Miguel Hidalgo, Ciudad de México</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gold</td>
+                                            <td>Eric21</td>
+                                            <td>5</td>
+                                            <td>Efectivo</td>
+                                            <td>Entregado</td>
+                                            <td>10:00</td>
+                                            <td>Miguel Hidalgo, Ciudad de México</td>
+                                        </tr><tr>
+                                        <td>Gold</td>
+                                        <td>Eric21</td>
+                                        <td>5</td>
+                                        <td>Efectivo</td>
+                                        <td>Entregado</td>
+                                        <td>10:00</td>
+                                        <td>Miguel Hidalgo, Ciudad de México</td>
+                                        </tr><tr>
+                                        <td>Gold</td>
+                                        <td>Eric21</td>
+                                        <td>5</td>
+                                        <td>Efectivo</td>
+                                        <td>Entregado</td>
+                                        <td>10:00</td>
+                                        <td>Miguel Hidalgo, Ciudad de México</td>
+                                        </tr>
+                                    </tbody>
+                                </table>                       
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer primary-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h5 class="white-text">
+                        FastBuy
+                    </h5>
+                    <p class="white-text light">
+                        Made with ♥ by Digimundo
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2016 FastBuy, All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script type="text/javascript" src="../js/jquery-2.1.1-min.js"></script>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/scripts.js"></script> 
+</body>
+</html>
